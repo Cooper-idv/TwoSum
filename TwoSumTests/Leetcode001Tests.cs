@@ -22,6 +22,21 @@ namespace TwoSum.Tests
             resultValue = Leetcode001.TwoSum(inputValue, 9);
             Assert.IsTrue(expectedValue[0] == resultValue[0] && expectedValue[1] == resultValue[1]);
 
+            expectedValue = new int[] { 0, 3 };
+            inputValue = new int[] { 0, 4, 3, 0 };
+            resultValue = Leetcode001.TwoSum(inputValue, 0);
+            Assert.IsTrue(expectedValue[0] == resultValue[0] && expectedValue[1] == resultValue[1]);
+
+            expectedValue = new int[] { 0, 2 };
+            inputValue = new int[] { -3, 4, 3, 5 };
+            resultValue = Leetcode001.TwoSum(inputValue, 0);
+            Assert.IsTrue(expectedValue[0] == resultValue[0] && expectedValue[1] == resultValue[1]);
+
+            expectedValue = new int[] { 1, 2 };
+            inputValue = new int[] { 3,2,4 };
+            resultValue = Leetcode001.TwoSum(inputValue, 6);
+            Assert.IsTrue(expectedValue[0] == resultValue[0] && expectedValue[1] == resultValue[1]);
+
             expectedValue = new int[] { 1, 2 };
             inputValue = new int[] { 1, 7, 2, 15 };
             resultValue = Leetcode001.TwoSum(inputValue, 9);
